@@ -15,10 +15,10 @@ internal class Listener
     public Listener(string server, string topic)
     {
         _httpClient = new HttpClient();
-
+        //Cria a factory e o client do mqtt
         var mqttFactory = new MqttFactory();
         _client = mqttFactory.CreateMqttClient();
-
+        //Adiciona os listeners para os eventos
         _client.ConnectedAsync += Client_ConnectedAsync;
         _client.DisconnectedAsync += Client_DisconnectedAsync;
         _client.ApplicationMessageReceivedAsync += Client_ApplicationMessageReceivedAsync;

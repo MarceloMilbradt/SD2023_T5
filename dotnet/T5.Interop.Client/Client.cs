@@ -13,6 +13,7 @@ internal class Client
 
     public Client(string server, string topic)
     {
+        //Cria a factory e o client do mqtt
         var mqttFactory = new MqttFactory();
         _client = mqttFactory.CreateMqttClient();
 
