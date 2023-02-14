@@ -37,7 +37,6 @@ internal class Listener
         var message = JsonConvert.DeserializeObject<Message>(payloadString)!;
         Print.MessageRecieved(message);
         await PublishToDatabase(message);
-        return Task.CompletedTask;
     }
 
     private Task Client_DisconnectedAsync(MqttClientDisconnectedEventArgs arg)
