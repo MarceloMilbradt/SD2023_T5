@@ -5,8 +5,10 @@
 - Marcelo
 
 Linguagens C# (.NET 6.0) e JS (Node)
+
 Broker MQTT
-SGBD Firebase
+
+BAAS Firebase
 
 Definição do grupo (até 3 componentes):
 -------------------------------------
