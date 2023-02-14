@@ -16,7 +16,7 @@ internal class Client
         //Cria a factory e o client do mqtt
         var mqttFactory = new MqttFactory();
         _client = mqttFactory.CreateMqttClient();
-
+        //Adiciona os listeners para os eventos
         _client.ConnectedAsync += Client_ConnectedAsync;
         _client.DisconnectedAsync += Client_DisconnectedAsync;
 
