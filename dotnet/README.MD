@@ -32,6 +32,9 @@ Disponibilizei o projeto compilado em um executavel ``T5.Interop.Client`` e ``T5
 usando o screen ou outra maquina, será necessario rodar ambos, client e listener (a ordem não interfere)
 
 Basta navegar para a pasta ``build`` e definir as permissões para o arquivo usando 
+
+O Client pode enviar mensagens para o MQTT, digite uma mensagem que ela irá ser enviada para o MQTT e aparecerá no Listener
+
 ```
 chmod 777 ./T5.Interop.Client
 ```
